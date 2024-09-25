@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Blog</h1>
+        <div class="content">
+            <div class="sidebar">
+                <div id="add-post" class="card">
+                    <h2>Add New Post</h2>
+                    <textarea id="post-content" placeholder="Write your post here..."></textarea><br>
+                    <input type="text" id="post-keywords" placeholder="#keyword1 #keyword2"><br>
+                    <input type="file" id="post-image" accept="image/*"><br>
+                    <button id="add-post-button">Add Post</button>
+                </div>
+
+                <div id="search-container" class="card">
+                    <h2>Search by Hashtag</h2>
+                    <input type="text" id="search-keyword" placeholder="#hashtag"><br>
+                    <button id="search-button">Search</button>
+                    <button id="show-all-posts-button" style="display: none;">Show All Posts</button>
+                </div>
+            </div>
+
+            <div id="posts-container" class="posts-area">
+                <h2>All Posts</h2>
+                <div id="posts"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
